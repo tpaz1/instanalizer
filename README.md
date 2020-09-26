@@ -1,1 +1,1 @@
-# instanalizer
+# instanalyzer
