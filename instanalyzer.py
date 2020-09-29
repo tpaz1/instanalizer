@@ -3,7 +3,6 @@ __email__ = "tompazz16@gmail.com"
 __date__ = "27/09/2020"
 
 from InstagramAPI import InstagramAPI
-from time import sleep
 
 class instanalyzer:
     """ This class defines an instagram program that uses instagram api to unfollow users that dont follow you back """
