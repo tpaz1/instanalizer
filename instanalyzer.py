@@ -11,7 +11,8 @@ class instanalyzer:
     def __init__(self):
         """ This function defines class variables """   
         self.following_users = []
-        self.follower_users = []      
+        self.follower_users = []   
+        self.users_should_be_unfollowed = []   
         self.api = ""
 
     def login(self, username, password):
@@ -34,8 +35,7 @@ class instanalyzer:
 
         for user in self.following_users:
             if user not in self.follower_users:
+                self.users_should_be_unfollowed.append(user['username'])
                 api.unfollow(user['pk'])
-                return user['username']
-                #sleep(20) 
 
-
+        return self.users_should_be_unfollowed

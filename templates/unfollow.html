@@ -1,0 +1,10 @@
+<html>
+   <body>
+      <form action = "http://localhost:5000/unfollow" method = "POST">
+        {% for item in data %}
+            <p> {{ item }} </p>
+        {% endfor %}
+         <p><input type = "submit" value = "unfollow" /></p>
+      </form>
+   </body>
+</html>
