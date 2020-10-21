@@ -10,7 +10,7 @@ bot = instanalyzer()
 app = Flask(__name__)
 """This current file will represent my web application."""
 
-@app.route("/home")
+@app.route("/")
 # representing our homepage
 
 def home():
